@@ -6,7 +6,7 @@ public class Triangle {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
-
+        System.out.println("Enter a number: ");
         int n = input.nextInt();
 
         for (int line = 1; line <= n; line++) {
@@ -22,7 +22,11 @@ public class Triangle {
 
     public static void printLine(int start, int end) {
       for (int i = start; i <= end; i++) {
-            System.out.print(i + " ");
+            if (i > 1) {
+              System.out.print(" " + i);
+            }
+            else
+            System.out.print(i);
           }
           System.out.println();
     }
